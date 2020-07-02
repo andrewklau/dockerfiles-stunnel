@@ -6,7 +6,8 @@ pid = /var/run/stunnel/stunnel.pid
 socket = l:TCP_NODELAY=1
 socket = r:TCP_NODELAY=1
 
-sslVersionMin = TLSv1.2
+sslVersion = all
+options = NO_SSLv2
 
 debug = ${STUNNEL_DEBUG}
 output = /var/log/stunnel/stunnel.log
